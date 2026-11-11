@@ -1,0 +1,160 @@
+main {
+  width: 100%;
+}
+
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  background:
+    radial-gradient(circle at 80% 30%, #1e3a8a, transparent 40%),
+    #0b1120;
+}
+
+.hero-content {
+  max-width: 750px;
+}
+
+.tagline {
+  color: #60a5fa;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #60a5fa;
+}
+
+.hero-content > p:not(.tagline) {
+  color: #cbd5e1;
+  line-height: 1.8;
+  max-width: 550px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 14px 22px;
+  border-radius: 7px;
+}
+
+.primary-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.secondary-btn {
+  border: 1px solid #64748b;
+  color: white;
+}
+
+.section {
+  padding: 85px 8%;
+}
+
+.section h2 {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+
+.section > p:not(.tagline) {
+  color: #cbd5e1;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.service-card {
+  background: #172337;
+  padding: 30px;
+  border: 1px solid #29374b;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-card p {
+  color: #cbd5e1;
+  margin-top: 12px;
+}
+
+.contact form {
+  max-width: 600px;
+  display: grid;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #475569;
+  border-radius: 7px;
+  background: #172337;
+  color: white;
+}
+
+.contact textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact button {
+  padding: 15px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  padding: 40px 8%;
+  background: #070c16;
+  color: #cbd5e1;
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    min-height: 500px;
+  }
+}
